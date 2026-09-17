@@ -1,0 +1,515 @@
+/* =====================================================
+   MEDUSA V2
+   ===================================================== */
+
+QWidget {
+    background-color: #06151D;
+    color: #EEF9FC;
+
+    font-family: "Segoe UI";
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   PC
+   ===================================================== */
+
+#mainCard {
+    background-color: #0A202A;
+
+    border: 1px solid #1A5263;
+
+    border-radius: 14px;
+}
+
+#mainCard:hover {
+    background-color: #0B2530;
+
+    border: 1px solid #49B8D1;
+}
+
+#smallLabel {
+    color: #75A9B8;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+#protectedText {
+    color: #F4EEE2;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+#liveStatus {
+    background-color: rgba(17, 92, 76, 80);
+
+    color: #58F2AE;
+
+    border: 1px solid rgba(88, 242, 174, 100);
+
+    border-radius: 10px;
+
+    padding: 5px 9px;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   SECTION
+   ===================================================== */
+
+#sectionTitle {
+    color: #75B7C6;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    padding-left: 3px;
+
+    margin-top: 2px;
+}
+
+
+/* =====================================================
+   PORT ROW
+   ===================================================== */
+
+#portRow {
+    background-color: #081D27;
+
+    border: 1px solid #174654;
+
+    border-radius: 13px;
+}
+
+#portRow:hover {
+    background-color: #0B2732;
+
+    border: 1px solid #46AFC7;
+}
+
+#serviceName {
+    color: #F4EFE5;
+
+    font-size: 13px;
+
+    font-weight: 900;
+}
+
+#portNumber {
+    background-color: #06151D;
+
+    color: #91B8C4;
+
+    border-radius: 6px;
+
+    padding: 2px 6px;
+
+    font-family: "Consolas";
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+#rowArrow {
+    color: #61DCF0;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   STATUS PILLS
+   ===================================================== */
+
+#statusActive {
+    background-color: rgba(40, 125, 95, 70);
+
+    color: #58F2AE;
+
+    border: 1px solid rgba(88, 242, 174, 95);
+
+    border-radius: 8px;
+
+    padding: 4px 8px;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    font-weight: 900;
+}
+
+#statusWarning {
+    background-color: rgba(130, 95, 25, 55);
+
+    color: #FFD064;
+
+    border: 1px solid rgba(255, 208, 100, 90);
+
+    border-radius: 8px;
+
+    padding: 4px 8px;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    font-weight: 900;
+}
+
+#statusDisabled {
+    background-color: rgba(105, 55, 155, 70);
+
+    color: #B66CFF;
+
+    border: 1px solid rgba(182, 108, 255, 100);
+
+    border-radius: 8px;
+
+    padding: 4px 8px;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    font-weight: 900;
+}
+
+#statusClosed {
+    background-color: rgba(75, 100, 110, 35);
+
+    color: #64828D;
+
+    border: 1px solid rgba(100, 130, 140, 45);
+
+    border-radius: 8px;
+
+    padding: 4px 8px;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   CONNECTION LINE
+   ===================================================== */
+
+#connectionDetail {
+    color: #769CA8;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    padding-right: 64px;
+}
+
+
+/* =====================================================
+   STAT CARDS
+   ===================================================== */
+
+#statCard {
+    background-color: #081E28;
+
+    border: 1px solid #184957;
+
+    border-radius: 15px;
+
+    min-height: 116px;
+}
+
+#statCard:hover {
+    background-color: #0A2530;
+
+    border: 1px solid #3696AB;
+}
+
+#statTitle {
+    color: #83BDCA;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   TRAFFIC
+   ===================================================== */
+
+#downloadValue {
+    color: #59E8FF;
+
+    font-family: "Consolas";
+
+    font-size: 14px;
+
+    font-weight: 900;
+}
+
+#uploadValue {
+    color: #B66CFF;
+
+    font-family: "Consolas";
+
+    font-size: 12px;
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   CONNECTIONS
+   ===================================================== */
+
+#bigConnectionValue {
+    color: #F4E8C9;
+
+    font-size: 38px;
+
+    font-weight: 900;
+}
+
+#recentValue {
+    color: #75A0AC;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+#monitoringFooter {
+    background-color: #071D26;
+
+    border: 1px solid #174B58;
+
+    border-radius: 16px;
+}
+
+#protectedStatus {
+    color: #59E8FF;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+#protectedStatus[state="active"] {
+    color: #58F2AE;
+}
+
+#protectedStatus[state="suspicious"] {
+    color: #B66CFF;
+}
+
+#protectedStatus[state="critical"] {
+    color: #FF5A7F;
+}
+
+#versionText {
+    color: #486A74;
+
+    font-family: "Consolas";
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   DETAILS
+   ===================================================== */
+
+#detailsDialog {
+    background-color: #06151D;
+}
+
+#detailsTitle {
+    color: #F4E8C9;
+
+    font-size: 26px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+#detailsSubtitle {
+    color: #59E8FF;
+
+    font-family: "Consolas";
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+#detailsCount {
+    color: #7FAAB6;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   CONNECTION CARDS
+   ===================================================== */
+
+#connectionCard {
+    background-color: #09232D;
+
+    border: 1px solid #194C59;
+
+    border-radius: 12px;
+}
+
+#connectionCard:hover {
+    background-color: #0C2A35;
+
+    border: 1px solid #48AFC6;
+}
+
+#connectionProcess {
+    color: #F3EEE4;
+
+    font-size: 14px;
+
+    font-weight: 900;
+}
+
+#connectionMeta {
+    color: #58F2AE;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+#connectionAddress {
+    color: #8BAEB8;
+
+    font-family: "Consolas";
+
+    font-size: 10px;
+}
+
+#connectionPid {
+    color: #53737D;
+
+    font-family: "Consolas";
+
+    font-size: 9px;
+}
+
+#detailsEmpty {
+    color: #617F89;
+
+    padding: 45px;
+
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   CLOSE
+   ===================================================== */
+
+#detailsCloseButton {
+    background-color: #0A2631;
+
+    color: #59E8FF;
+
+    border: 1px solid #286B7D;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+#detailsCloseButton:hover {
+    background-color: #103845;
+
+    color: #F4E8C9;
+
+    border: 1px solid #B66CFF;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+   ===================================================== */
+
+QScrollBar:vertical {
+    background-color: #071820;
+
+    width: 8px;
+
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #285B6B;
+
+    min-height: 30px;
+
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #B66CFF;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
