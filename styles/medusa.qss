@@ -1,515 +1,99 @@
-/* =====================================================
-   MEDUSA V2
-   ===================================================== */
-
-QWidget {
-    background-color: #06151D;
-    color: #EEF9FC;
-
-    font-family: "Segoe UI";
-    font-size: 13px;
-}
-
-
-/* =====================================================
-   PC
-   ===================================================== */
-
-#mainCard {
-    background-color: #0A202A;
-
-    border: 1px solid #1A5263;
-
-    border-radius: 14px;
-}
-
-#mainCard:hover {
-    background-color: #0B2530;
-
-    border: 1px solid #49B8D1;
-}
-
-#smallLabel {
-    color: #75A9B8;
-
-    font-size: 9px;
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-}
-
-#protectedText {
-    color: #F4EEE2;
-
-    font-size: 15px;
-
-    font-weight: 800;
-}
-
-#liveStatus {
-    background-color: rgba(17, 92, 76, 80);
-
-    color: #58F2AE;
-
-    border: 1px solid rgba(88, 242, 174, 100);
-
-    border-radius: 10px;
-
-    padding: 5px 9px;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    font-weight: 900;
-}
-
-
-/* =====================================================
-   SECTION
-   ===================================================== */
-
-#sectionTitle {
-    color: #75B7C6;
-
-    font-size: 9px;
-
-    font-weight: 900;
-
-    letter-spacing: 2px;
-
-    padding-left: 3px;
-
-    margin-top: 2px;
-}
-
-
-/* =====================================================
-   PORT ROW
-   ===================================================== */
-
-#portRow {
-    background-color: #081D27;
-
-    border: 1px solid #174654;
-
-    border-radius: 13px;
-}
-
-#portRow:hover {
-    background-color: #0B2732;
-
-    border: 1px solid #46AFC7;
-}
-
-#serviceName {
-    color: #F4EFE5;
-
-    font-size: 13px;
-
-    font-weight: 900;
-}
-
-#portNumber {
-    background-color: #06151D;
-
-    color: #91B8C4;
-
-    border-radius: 6px;
-
-    padding: 2px 6px;
-
-    font-family: "Consolas";
-
-    font-size: 10px;
-
-    font-weight: 700;
-}
-
-#rowArrow {
-    color: #61DCF0;
-
-    font-size: 21px;
-
-    font-weight: 700;
-}
-
-
-/* =====================================================
-   STATUS PILLS
-   ===================================================== */
-
-#statusActive {
-    background-color: rgba(40, 125, 95, 70);
-
-    color: #58F2AE;
-
-    border: 1px solid rgba(88, 242, 174, 95);
-
-    border-radius: 8px;
-
-    padding: 4px 8px;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    font-weight: 900;
-}
-
-#statusWarning {
-    background-color: rgba(130, 95, 25, 55);
-
-    color: #FFD064;
-
-    border: 1px solid rgba(255, 208, 100, 90);
-
-    border-radius: 8px;
-
-    padding: 4px 8px;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    font-weight: 900;
-}
-
-#statusDisabled {
-    background-color: rgba(105, 55, 155, 70);
-
-    color: #B66CFF;
-
-    border: 1px solid rgba(182, 108, 255, 100);
-
-    border-radius: 8px;
-
-    padding: 4px 8px;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    font-weight: 900;
-}
-
-#statusClosed {
-    background-color: rgba(75, 100, 110, 35);
-
-    color: #64828D;
-
-    border: 1px solid rgba(100, 130, 140, 45);
-
-    border-radius: 8px;
-
-    padding: 4px 8px;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    font-weight: 800;
-}
-
-
-/* =====================================================
-   CONNECTION LINE
-   ===================================================== */
-
-#connectionDetail {
-    color: #769CA8;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    padding-right: 64px;
-}
-
-
-/* =====================================================
-   STAT CARDS
-   ===================================================== */
-
-#statCard {
-    background-color: #081E28;
-
-    border: 1px solid #184957;
-
-    border-radius: 15px;
-
-    min-height: 116px;
-}
-
-#statCard:hover {
-    background-color: #0A2530;
-
-    border: 1px solid #3696AB;
-}
-
-#statTitle {
-    color: #83BDCA;
-
-    font-size: 9px;
-
-    font-weight: 900;
-
-    letter-spacing: 1px;
-}
-
-
-/* =====================================================
-   TRAFFIC
-   ===================================================== */
-
-#downloadValue {
-    color: #59E8FF;
-
-    font-family: "Consolas";
-
-    font-size: 14px;
-
-    font-weight: 900;
-}
-
-#uploadValue {
-    color: #B66CFF;
-
-    font-family: "Consolas";
-
-    font-size: 12px;
-
-    font-weight: 900;
-}
-
-
-/* =====================================================
-   CONNECTIONS
-   ===================================================== */
-
-#bigConnectionValue {
-    color: #F4E8C9;
-
-    font-size: 38px;
-
-    font-weight: 900;
-}
-
-#recentValue {
-    color: #75A0AC;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    font-weight: 700;
-}
-
-
-/* =====================================================
-   FOOTER
-   ===================================================== */
-
-#monitoringFooter {
-    background-color: #071D26;
-
-    border: 1px solid #174B58;
-
-    border-radius: 16px;
-}
-
-#protectedStatus {
-    color: #59E8FF;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    font-weight: 900;
-
-    letter-spacing: 1px;
-}
-
-#protectedStatus[state="active"] {
-    color: #58F2AE;
-}
-
-#protectedStatus[state="suspicious"] {
-    color: #B66CFF;
-}
-
-#protectedStatus[state="critical"] {
-    color: #FF5A7F;
-}
-
-#versionText {
-    color: #486A74;
-
-    font-family: "Consolas";
-
-    font-size: 8px;
-
-    font-weight: 700;
-}
-
-
-/* =====================================================
-   DETAILS
-   ===================================================== */
-
-#detailsDialog {
-    background-color: #06151D;
-}
-
-#detailsTitle {
-    color: #F4E8C9;
-
-    font-size: 26px;
-
-    font-weight: 900;
-
-    letter-spacing: 2px;
-}
-
-#detailsSubtitle {
-    color: #59E8FF;
-
-    font-family: "Consolas";
-
-    font-size: 10px;
-
-    font-weight: 800;
-}
-
-#detailsCount {
-    color: #7FAAB6;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    font-weight: 700;
-}
-
-
-/* =====================================================
-   CONNECTION CARDS
-   ===================================================== */
-
-#connectionCard {
-    background-color: #09232D;
-
-    border: 1px solid #194C59;
-
-    border-radius: 12px;
-}
-
-#connectionCard:hover {
-    background-color: #0C2A35;
-
-    border: 1px solid #48AFC6;
-}
-
-#connectionProcess {
-    color: #F3EEE4;
-
-    font-size: 14px;
-
-    font-weight: 900;
-}
-
-#connectionMeta {
-    color: #58F2AE;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-
-    font-weight: 700;
-}
-
-#connectionAddress {
-    color: #8BAEB8;
-
-    font-family: "Consolas";
-
-    font-size: 10px;
-}
-
-#connectionPid {
-    color: #53737D;
-
-    font-family: "Consolas";
-
-    font-size: 9px;
-}
-
-#detailsEmpty {
-    color: #617F89;
-
-    padding: 45px;
-
-    font-size: 12px;
-}
-
-
-/* =====================================================
-   CLOSE
-   ===================================================== */
-
-#detailsCloseButton {
-    background-color: #0A2631;
-
-    color: #59E8FF;
-
-    border: 1px solid #286B7D;
-
-    border-radius: 10px;
-
-    padding: 10px;
-
-    font-size: 10px;
-
-    font-weight: 900;
-
-    letter-spacing: 1px;
-}
-
-#detailsCloseButton:hover {
-    background-color: #103845;
-
-    color: #F4E8C9;
-
-    border: 1px solid #B66CFF;
-}
-
-
-/* =====================================================
-   SCROLLBAR
-   ===================================================== */
-
-QScrollBar:vertical {
-    background-color: #071820;
-
-    width: 8px;
-
-    border-radius: 4px;
-}
-
-QScrollBar::handle:vertical {
-    background-color: #285B6B;
-
-    min-height: 30px;
-
-    border-radius: 4px;
-}
-
-QScrollBar::handle:vertical:hover {
-    background-color: #B66CFF;
-}
-
-QScrollBar::add-line:vertical,
-QScrollBar::sub-line:vertical {
-    height: 0px;
-}
+QWidget { background: transparent; color: #f2f1f6; font-family: "Segoe UI", "DejaVu Sans"; font-size: 13px; }
+QWidget[mono="true"] { font-family: "Consolas", "DejaVu Sans Mono"; }
+#medusaWindow { background: qlineargradient(x1:0,y1:0,x2:0,y2:1,stop:0 #218771,stop:0.16 #246f63,stop:0.36 #234848,stop:0.56 #292732,stop:0.76 #211f29,stop:1 #18161e); border: 1px solid #486760; border-radius: 10px; }
+#titleBar { background: rgba(23,40,40,20); border-bottom: 1px solid rgba(219,239,230,25); }
+#brandTitle { font-size: 29px; font-weight: 800; color: #f1f5f5; letter-spacing: 1px; }
+#status { color: #55f1c6; font-size: 11px; }
+#download { color: #69efc9; } #upload { color: #c5a3e9; }
+#muted { color: #b0b2bc; font-size: 11px; }
+#eyebrow { color: #b7cec8; font-size: 10px; }
+#metricValue { color: #f1f3f6; font-size: 15px; }
+#telemetry { color: #d3e1df; font-size: 11px; }
+#metric { border-top: 1px solid rgba(207,229,223,42); }
+#section { border: 1px solid rgba(199,212,218,28); border-radius: 9px; background: rgba(24,24,33,64); }
+#sectionHeader { border: none; border-bottom: 1px solid rgba(206,224,219,20); border-radius: 8px; background: rgba(24,31,37,24); text-align: left; padding: 8px 14px; font-weight: 600; font-size: 14px; color: #f4f2f7; }
+#sectionHeader:hover { background: rgba(191,230,220,22); }
+#sectionHeader:focus { border-left: 2px solid #56e3bd; }
+#detail { color: #b9d0cb; padding: 5px; font-size: 11px; }
+QPushButton, QComboBox, QLineEdit { border: 1px solid rgba(208,209,225,35); border-radius: 6px; background: rgba(64,61,78,180); padding: 7px 10px; color: #f3f1f9; }
+QPushButton:hover, QComboBox:hover { background: #565066; border-color: #7c778b; }
+QPushButton:focus, QComboBox:focus, QLineEdit:focus { border: 1px solid #59d8b6; }
+QPushButton:disabled { color: #84818e; background: rgba(45,43,55,90); border-color: #484550; }
+#windowControl { min-width: 20px; max-width: 30px; border: none; background: transparent; padding: 5px; font-size: 15px; }
+#windowControl:hover { background: rgba(231,255,247,30); }
+#windowControl:checked { background: #326e60; color: #7fffd9; }
+#textButton { color: #72e6c4; border: none; background: transparent; padding: 4px 0; text-align: left; font-size: 11px; }
+#textButton:hover { color: #bcffe7; }
+QTableWidget { border: none; background: rgba(23,23,31,65); alternate-background-color: rgba(210,220,230,5); selection-background-color: #3b6159; selection-color: #ffffff; }
+QTableWidget::item { border-bottom: 1px solid rgba(191,194,211,18); padding: 5px 6px; }
+QHeaderView::section { background: #2c343b; color: #c7c6d2; border: none; padding: 8px; font-size: 10px; }
+QScrollBar:vertical { background: rgba(26,25,33,70); width: 8px; margin: 0; border-radius: 4px; }
+QScrollBar::handle:vertical { background: #686572; min-height: 24px; border-radius: 4px; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar:horizontal { background: #292732; height: 8px; }
+QScrollBar::handle:horizontal { background: #686572; min-width: 24px; border-radius: 4px; }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0; }
+QToolTip { background: #33313f; color: #f1f3f6; border: 1px solid #656171; padding: 7px; }
+#errorBanner { color: #ffe0bb; background: #514139; padding: 10px; }
+QComboBox QAbstractItemView { background: #302e3a; color: #eeeaf4; selection-background-color: #4b665f; }
+QMessageBox { background: #292732; }
+QLabel { background: transparent; }
+#serviceChevron { color: #78e3c5; font-size: 25px; min-width: 16px; }
+#serviceName { color: #f0eff6; font-size: 17px; font-weight: 700; min-width: 68px; }
+#portBadge { color: #cbdcd7; background: rgba(117,143,140,20); border: 1px solid #627570; border-radius: 5px; padding: 4px 9px; font-size: 12px; }
+#serviceSummary { color: #c0c9ce; font-size: 11px; }
+#telemetryRule { background: rgba(209,229,222,42); border: none; }
+#closeConnection { border: 1px solid #795c70; color: #f2c7d4; background: #463948; border-radius: 6px; }
+#closeConnection:hover { background: #65465d; }
+#closeConnection:disabled { border-color: #4b4653; color: #86818f; background: #302c39; }
+#viewTab { background: rgba(23,23,31,70); border: 1px solid rgba(208,209,225,30); padding: 10px 18px; font-weight: 600; }
+#viewTab:checked { background: #46675e; border-color: #61a790; color: #ecfff9; }
+/* 0.3: continuous canvas, one navigation surface, quiet service rows. */
+#medusaWindow { background: transparent; border: none; }
+#titleBar { background: transparent; border: none; }
+#brandTitle { font-size: 21px; font-weight: 700; letter-spacing: 2px; }
+#sidebar { background: rgba(22,24,33,125); border: 1px solid rgba(215,224,230,20); border-radius: 10px; }
+#hostName { color: #f6f5fa; font-size: 14px; font-weight: 600; }
+#pageTitle { color: #ffffff; font-size: 26px; font-weight: 650; }
+#pageCaption { color: #d0dfda; font-size: 12px; }
+#sideCaption { color: #c3c7cd; font-size: 12px; }
+#sideValue { color: #faf9fd; font-size: 27px; font-weight: 600; }
+#versionLabel { color: #a6a2b3; font-size: 10px; }
+#navButton { text-align: left; background: transparent; border: 1px solid transparent; padding: 8px 12px; color: #c5c5d1; font-weight: 500; }
+#navButton:hover { background: rgba(211,230,223,16); }
+#navButton:checked { background: rgba(153,209,190,28); border-left: 3px solid #7eebc7; color: #ffffff; }
+#compactButton { background: rgba(129,119,146,25); color: #e0dce9; border: 1px solid rgba(208,204,225,36); text-align: left; }
+#compactButton:hover { background: rgba(129,119,146,60); }
+#radarSection { background: transparent; border: none; }
+#radarSection #sectionHeader { color: #ecf3f1; background: transparent; border: none; font-size: 13px; padding: 6px 0; }
+#servicesGroup { background: rgba(24,22,31,75); border: 1px solid rgba(213,211,228,22); border-radius: 10px; }
+#section[kind="service"] { border: none; background: transparent; }
+#section[kind="service"] #sectionHeader { border: none; border-bottom: 1px solid rgba(212,211,225,18); border-radius: 0; background: transparent; padding: 0; }
+#section[kind="service"] #sectionHeader:hover { background: rgba(201,204,220,12); }
+#serviceName { font-size: 14px; font-weight: 600; min-width: 56px; }
+#serviceChevron { font-size: 21px; color: #aaaabc; min-width: 12px; }
+#portBadge { background: rgba(204,206,221,6); border: 1px solid rgba(204,206,221,44); color: #c3c6d1; padding: 3px 7px; font-size: 11px; }
+#serviceSummary { color: #bbb9c8; font-size: 11px; }
+QHeaderView::section { background: #302f3b; font-size: 10px; padding: 7px; color: #c0bdcc; }
+#windowControl { font-size: 13px; }
+QScrollBar:vertical { width: 6px; background: transparent; }
+QScrollBar::handle:vertical { background: rgba(169,163,183,95); border-radius: 3px; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: transparent; }
+QScrollBar::handle:horizontal { background: rgba(169,163,183,95); }
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: transparent; }
+
+/* 0.4: deep lagoon palette and desktop widget. */
+#headerRates { background: rgba(12,29,37,70); border: 1px solid rgba(160,231,218,24); border-radius: 9px; }
+#rateCaption { color: #9fbcbf; font-size: 9px; font-weight: 600; letter-spacing: 1px; }
+#headerRates #download { color: #a7f3da; font-size: 15px; font-weight: 600; }
+#headerRates #upload { color: #bcc8ed; font-size: 15px; font-weight: 600; }
+#miniBrand { color: #e4f5f1; font-size: 15px; font-weight: 700; letter-spacing: 2px; }
+#miniService { color: #ecf6f4; font-size: 14px; font-weight: 600; }
+#miniDot { color: #6aebc4; font-size: 15px; }
+#miniRow { border-bottom: 1px solid rgba(188,219,220,22); }
+#miniPanel QPushButton { background: rgba(190,222,224,15); border: 1px solid rgba(190,222,224,30); padding: 5px 9px; color: #d8ede9; border-radius: 7px; }
+
+QMenu { background: #202e38; color: #e1eeeb; border: 1px solid #496169; padding: 6px; }
+QMenu::item { padding: 9px 16px; }
+QMenu::item:selected { background: #335950; }
+QMenu::item:disabled { color: #7c9095; }

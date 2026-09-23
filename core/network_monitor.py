@@ -3,6 +3,7 @@ import sys
 import time
 
 import psutil
+from core.socket_inventory import build_inventory
 
 
 MONITORED_PORTS = {
@@ -624,11 +625,21 @@ def get_network_snapshot():
                 "in ascolto"
             )
 
+    inventory = build_inventory(connections)
+    identities = {row['pid']: row['process_created'] for row in inventory}
+    for info in ports.values():
+        for entry in info['connections']:
+            entry['process_created'] = identities.get(entry.get('pid'))
+
     return {
+        "socket_inventory": inventory,
 
         "ports":
             ports,
 
         "connections":
             active_connections,
+        "ipv4": sum(c.family == socket.AF_INET and c.status == psutil.CONN_ESTABLISHED for c in connections),
+        "ipv6": sum(c.family == socket.AF_INET6 and c.status == psutil.CONN_ESTABLISHED for c in connections),
+        "local_ips": sorted({c.laddr.ip for c in connections if c.laddr and c.status == psutil.CONN_ESTABLISHED and c.laddr.ip not in ("127.0.0.1", "::1")}),
     }

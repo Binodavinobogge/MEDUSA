@@ -68,6 +68,9 @@ class ConnectionHistory:
                 []
             ):
 
+                if connection.get("remote") in (None, "", "—"):
+                    continue
+
                 key = self._connection_key(
                     service,
                     connection
